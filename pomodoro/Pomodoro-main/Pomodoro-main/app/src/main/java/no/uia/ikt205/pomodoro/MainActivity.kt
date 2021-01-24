@@ -14,8 +14,12 @@ class MainActivity : AppCompatActivity() {
     lateinit var timer:CountDownTimer
     lateinit var startButton:Button
     lateinit var coutdownDisplay:TextView
+    lateinit var btn30:Button
+    lateinit var btn60:Button
+    lateinit var btn90:Button
+    lateinit var btn120:Button
 
-    val timeToCountDownInMs = 5000L
+    var timeToCountDownInMs = 0L
     val timeTicks = 1000L
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +27,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
        startButton = findViewById<Button>(R.id.startCountdownButton)
-       startButton.setOnClickListener(){
+       btn30 = findViewById<Button>(R.id.btn30)
+       btn60 = findViewById<Button>(R.id.btn60)
+       btn90 = findViewById<Button>(R.id.btn90)
+       btn120 = findViewById<Button>(R.id.btn120)
+
+       btn30.setOnClickListener(){
+           timeToCountDownInMs=30000
+       }
+
+        btn60.setOnClickListener(){
+            timeToCountDownInMs=60000
+        }
+
+        btn90.setOnClickListener(){
+            timeToCountDownInMs=90000
+        }
+
+        btn120.setOnClickListener(){
+            timeToCountDownInMs=120000
+        }
+        startButton.setOnClickListener(){
            startCountDown(it)
        }
        coutdownDisplay = findViewById<TextView>(R.id.countDownView)
