@@ -19,14 +19,18 @@ class MainActivity : AppCompatActivity() {
     lateinit var btn90:Button
     lateinit var btn120:Button
 
+
     var timeToCountDownInMs = 0L
+
     val timeTicks = 1000L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
        startButton = findViewById<Button>(R.id.startCountdownButton)
+
        btn30 = findViewById<Button>(R.id.btn30)
        btn60 = findViewById<Button>(R.id.btn60)
        btn90 = findViewById<Button>(R.id.btn90)
