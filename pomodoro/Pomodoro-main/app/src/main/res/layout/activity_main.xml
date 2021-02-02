@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <TextView
         android:id="@+id/countDownView"
         android:layout_width="wrap_content"
@@ -16,6 +18,22 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+
+    <EditText
+        android:id="@+id/readLine"
+        android:layout_width="match_parent"
+        android:layout_height="6mm"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/startCountdownButton"
+        app:layout_constraintTop_toBottomOf="@+id/countDownView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="Deprecated"
+        android:autofillHints="" />
+
     <Button
         android:id="@+id/startCountdownButton"
         android:layout_width="wrap_content"
@@ -25,6 +43,53 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countDownView" />
+
+
+    <TextView
+        android:id="@+id/timerDuration"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:text="Duration"
+        app:layout_constraintStart_toStartOf="@+id/SeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pauseDuration"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="92dp"
+        android:text="Pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SeekBarPause"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/SeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:max="300"
+        android:min="15"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <SeekBar
+        android:id="@+id/SeekBarPause"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:max="25"
+        android:min="0"
+        android:text="Pause"
+        app:layout_constraintBottom_toTopOf="@+id/countDownView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        app:layout_constraintVertical_bias="0.55"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
