@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -20,12 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e34cdc54-34c3-444b-8789-f858765a54e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
+=======
+  <component name="ChangeListManager">
+    <list default="true" id="1e015fda-c696-4f2c-8a48-0c25b949c212" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/no/uia/ikt205/pomodoro/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/no/uia/ikt205/pomodoro/MainActivity.kt" afterDir="false" />
+>>>>>>> resolve conflict
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,11 +55,18 @@
   </component>
   <component name="ProjectId" id="1nPzpbvNY894vFyIg8xaYN8zTyl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1oLmFSu1OEZUpBhkDvDeTFTBlMC" />
+>>>>>>> resolve conflict
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-24T00:39:00.122Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -149,12 +163,17 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+=======
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+>>>>>>> resolve conflict
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="e34cdc54-34c3-444b-8789-f858765a54e1" name="Default Changelist" comment="" />
       <created>1611306697485</created>
       <option name="number" value="Default" />
@@ -240,5 +259,20 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611493760956" />
+=======
+      <changelist id="1e015fda-c696-4f2c-8a48-0c25b949c212" name="Default Changelist" comment="" />
+      <created>1613074141087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613074141087</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613074197659">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1613074197659" />
+>>>>>>> resolve conflict
   </component>
 </project>
