@@ -48,8 +48,15 @@ private fun getItemsFromDataBase(holder:ItemDepositoryHolder,listTitle:String) {
 
                 for(document in result){
                     val title = document.get("item_title").toString()
-                    val item = Todo(title)
-                    holder.updateCollection(item)
+                    val checked= document.get("isChecked")
+                    if (checked == true) {
+                        val item = Todo(title, true)
+                        holder.updateCollection(item)
+                    }else{
+                        val item= Todo(title)
+                        holder.updateCollection(item)
+
+                    }
 
                     Log.d(TAG,"${document.id}=>${document.data}")
 
@@ -60,26 +67,6 @@ private fun getItemsFromDataBase(holder:ItemDepositoryHolder,listTitle:String) {
             }
 
     }
-
-private fun getListSize(): Int {
-    var progressValue= 1
-    val Items = ItemDepositoryHolder.instance
-
-
-
-
-    Items.onItem = {
-        for (l in it) {
-
-        }
-
-    }
-
-
-
-
-    return progressValue
-}
 
 
 
@@ -127,8 +114,6 @@ class MainRecyclerAdapter(
 
             holder.itemView.apply {
                 tvListTodo.text = current_list.list_title
-                val todoListTitle = tvListTodo.text
-
 
                 delete_list.setOnClickListener {
                     deleteDoneList(current_list)
