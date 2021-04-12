@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.prosjektoppgave1.databinding.ActivityMainBinding
+//import com.example.prosjektoppgave1.databinding.ActivityMainBinding
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.DocumentReference
 import kotlinx.android.synthetic.main.activity_addtodolist.*
@@ -28,6 +28,16 @@ private fun updateCheckedToDataBase(todo: Todo, list: String, state: Boolean){
             .addOnSuccessListener { Log.d(TAG, "State successfully updated!") }
             .addOnFailureListener { e -> Log.w(TAG, "Error updating document", e) }
 }
+
+private fun deleteItemFromDB(todo:Todo,collection:String){
+    val listRef:CollectionReference = db.collection(collection)
+    listRef.document(todo.item_title)
+            .delete()
+            .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully deleted!") }
+            .addOnFailureListener { e -> Log.w(TAG, "Error deleting document", e) }
+
+}
+
 
 class TodoList_Adapter(
 
@@ -54,14 +64,6 @@ class TodoList_Adapter(
 
         }
 
-
-
-        fun addTodo(todo: Todo){
-            todos.add(todo)
-            notifyItemInserted(todos.size - 1)
-
-
-        }
 
 
         fun update(ItemTodo: List<Todo>){
@@ -102,13 +104,12 @@ class TodoList_Adapter(
                 cbdone.setOnCheckedChangeListener { _, isChecked ->
                     toggleStrikThrough(tvitemTodo, isChecked)
                     curentTodo.isChecked = !curentTodo.isChecked
-
                     updateCheckedToDataBase(curentTodo,title.toString(),true)
-
                 }
 
                 delete_done_item.setOnClickListener {
                     deleteDoneTodo()
+                    deleteItemFromDB(curentTodo,title.toString())
 
                 }
             }
