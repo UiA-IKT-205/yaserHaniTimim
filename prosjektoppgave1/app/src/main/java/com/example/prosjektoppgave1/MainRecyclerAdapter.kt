@@ -119,9 +119,6 @@ class MainRecyclerAdapter(
                     deleteDoneList(current_list)
                 }
 
-                tvListTodo.setOnClickListener {
-                }
-
                 setOnClickListener {
 
                     val TodoItemTitle = current_list.list_title

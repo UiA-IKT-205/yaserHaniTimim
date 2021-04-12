@@ -85,11 +85,6 @@ private fun deleteItemFromDatabase(header: String) {
             return title.toString()
         }
 
-
-
-
-
-
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_addtodolist)
