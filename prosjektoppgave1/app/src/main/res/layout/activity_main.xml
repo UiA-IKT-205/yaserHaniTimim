@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:text="@string/tv_header"
         android:textSize="30sp"
-        android:background="#76b5c5"
+        android:background="#1e81b0"
         android:textAlignment="center"
         android:paddingTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
