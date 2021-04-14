@@ -19,6 +19,7 @@ Second screen:
 -	Delete button to delete all checked items in the list
 
 How it works
+
 When user open the application so the first screen is pop up, then the user can write a title to the list that he/she would create. When the user press ADD button, the application passes the text in the EditText to the second screen and set the text as a title to the list. 
 In the second activity (screen) user can add items to the list that is already created
 By writing the title of the item and pressing ADD button, then the new item is added to recyclerview in this activity (AddTodoListActivity). Also the value of the progress Bar increases.  When user would delete an item from list so user have to check the checkbox and then press DELETE button in the bottom part of screen.
