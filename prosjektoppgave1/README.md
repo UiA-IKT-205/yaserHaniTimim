@@ -6,11 +6,16 @@ This application is the first project in IKT205. Kotlin is the language which is
 The application interface consist of to screens. The first screen is to display all lists, whereas the second one is to display the items of a specific list.
 
 Screens
+
 First screen:
 -	A Header with text “My lists”
 -	RecyclerView to list all lists that a user create in the app
 -	EditText in the very left bottom to write a title to new list
 -	Add button to add new list with the title from EditText
+<img width="195" alt="firestScreen" src="https://user-images.githubusercontent.com/60326230/114682259-35f12b00-9d0f-11eb-8a38-27d88ebb5386.PNG">
+
+
+
 Second screen:
 -	Header with list title
 -	RecyclerView to list all items that a user added to the list
