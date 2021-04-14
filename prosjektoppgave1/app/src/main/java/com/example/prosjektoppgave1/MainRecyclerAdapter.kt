@@ -40,6 +40,7 @@ private fun deleteListFromDatabase(todolist:TodoList){
 }
 
 
+
 private fun getItemsFromDataBase(holder:ItemDepositoryHolder,listTitle:String) {
 
     val docRef = db.collection(listTitle)
@@ -99,6 +100,7 @@ class MainRecyclerAdapter(
         todosList.remove(todoLista)
         notifyDataSetChanged()
         deleteListFromDatabase(todoLista)
+
     }
 
     fun update(listsTodo:TodoList){

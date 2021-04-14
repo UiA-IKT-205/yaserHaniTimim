@@ -7,10 +7,13 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.prosjektoppgave1.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FieldPath
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_addtodolist.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.new_list.*
@@ -18,14 +21,18 @@ import kotlinx.android.synthetic.main.new_list.*
 
 class MainActivity() : AppCompatActivity() {
 
-//    private fun signInAnonymously() {
-//        auth.signInAnonymously().addOnSuccessListener {
-//            Log.d(TAG, "login success ${it.user.toString()}")
-//        }.addOnFailureListener {
-//            Log.e(TAG, "login fail", it)
-//        }
-//    }
+
     private lateinit var binding: ActivityMainBinding
+    private lateinit var auth: FirebaseAuth
+
+
+    private fun signInAnonymously() {
+        auth.signInAnonymously().addOnSuccessListener {
+            Log.d(TAG, "login success ${it.user.toString()}")
+        }.addOnFailureListener {
+            Log.e(TAG, "login fail", it)
+        }
+    }
 
     private fun sendListToDataBase(todoList:TodoList){
         var db = FirebaseFirestore.getInstance()
@@ -63,6 +70,10 @@ class MainActivity() : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
+            auth = Firebase.auth
+
+            signInAnonymously()
+
 
             AddListAdapter = MainRecyclerAdapter(mutableListOf())
             rvLists_todo.adapter = AddListAdapter
