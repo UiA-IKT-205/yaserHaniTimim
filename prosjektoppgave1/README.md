@@ -36,4 +36,10 @@ When user go back to the first screen (MainActivity), so the new list is created
 All functions included add lists, add items, delete lists and delete items are synchronized with Firestore database.
 
 
+Firestore
+
+<img width="949" alt="firebase" src="https://user-images.githubusercontent.com/60326230/114683479-5968a580-9d10-11eb-8b25-574a9e0dc71e.PNG">
+
+
+
 
