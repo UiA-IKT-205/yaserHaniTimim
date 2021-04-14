@@ -22,6 +22,10 @@ Second screen:
 -	EditText in the very left bottom to write a new item 
 -	Add button to add new item to the list
 -	Delete button to delete all checked items in the list
+<img width="195" alt="secondScreen" src="https://user-images.githubusercontent.com/60326230/114682634-8e282d00-9d0f-11eb-82da-849fee1878dd.PNG">
+
+
+
 
 How it works
 
