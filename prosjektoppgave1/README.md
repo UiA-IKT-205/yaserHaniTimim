@@ -41,5 +41,5 @@ Firestore
 <img width="949" alt="firebase" src="https://user-images.githubusercontent.com/60326230/114683479-5968a580-9d10-11eb-8b25-574a9e0dc71e.PNG">
 
 
-
+ link til nedlasting av APK via Firebase App distribution [here](https://appdistribution.firebase.dev/i/1306bded51ef0bc8)
 
