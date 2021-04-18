@@ -93,7 +93,7 @@ private fun deleteItemFromDatabase(header: String) {
 
             val bundle = intent.extras
             val todoListTitle = bundle!!.getString("listTitle")
-            var TodoItemTitle = bundle.getString("Title")
+            var TodoItemTitle = bundle!!.getString("Title")
             single_list_header.text = todoListTitle
 
 
@@ -114,7 +114,7 @@ private fun deleteItemFromDatabase(header: String) {
 
             Items.onItem = {
                 for (l in it) {
-                    todoListAdapter.update(it)
+                    todoListAdapter.update(l)
                     Items.delete(l)
                     progress_single_list.progress = todoListAdapter.itemCount
                 }
@@ -130,15 +130,10 @@ private fun deleteItemFromDatabase(header: String) {
 
                 if (todoTitle.isNotEmpty()) {
                     val todo = Todo(todoTitle)
-                    progress_single_list.progress = todoListAdapter.itemCount
+                    progress_single_list.progress = Items.size()
                     ItemDepositoryHolder.instance.updateCollection(todo)
                     tvAddItem.text.clear()
-
-                    if (todoListTitle != null) {
-                        senditemToDataBase(todo, todoListTitle)
-                    }
-
-
+                    senditemToDataBase(todo,  single_list_header.text.toString())
 
                 }
             }

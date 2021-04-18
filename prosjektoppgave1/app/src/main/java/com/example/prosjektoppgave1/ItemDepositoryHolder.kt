@@ -29,6 +29,10 @@ class ItemDepositoryHolder {
         itemCollection.remove(i)
         onItem?.invoke(itemCollection)
     }
+    fun size():Int{
+
+        return itemCollection.size
+    }
 
 
     fun updateItem(i:Todo){

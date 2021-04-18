@@ -66,11 +66,11 @@ class TodoList_Adapter(
 
 
 
-        fun update(ItemTodo: List<Todo>){
-            for(l in ItemTodo){
-            todos.add(l)
+        fun update(ItemTodo: Todo){
+
+            todos.add(ItemTodo)
             notifyItemInserted(todos.size - 1)
-            }
+
         }
 
 
@@ -104,11 +104,12 @@ class TodoList_Adapter(
                 cbdone.setOnCheckedChangeListener { _, isChecked ->
                     toggleStrikThrough(tvitemTodo, isChecked)
                     curentTodo.isChecked = !curentTodo.isChecked
-                    updateCheckedToDataBase(curentTodo,title.toString(),true)
+                    updateCheckedToDataBase(curentTodo,title.toString(),curentTodo.isChecked)
                 }
 
                 delete_done_item.setOnClickListener {
                     deleteDoneTodo()
+                
                     deleteItemFromDB(curentTodo,title.toString())
 
                 }
