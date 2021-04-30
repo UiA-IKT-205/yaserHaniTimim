@@ -8,17 +8,18 @@
     tools:context=".MainActivity">
 
 
-
-
     <TextView
         android:id="@+id/game_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-black"
         android:text="Tre på Rad"
         android:textAlignment="center"
+
         android:textCursorDrawable="@color/material_on_background_emphasis_medium"
         android:textSize="40dp"
-        android:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toTopOf="@+id/btn_start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,12 +29,14 @@
         android:id="@+id/btn_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#80391e"
+        android:text="Start a Game"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Start a Game"
-        android:backgroundTint="#80391e"
+
         app:layout_constraintBottom_toTopOf="@+id/btn_join"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -43,11 +46,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:text="join"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#80391e"
+        android:text="join"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="506dp" />
+        tools:ignore="MissingConstraints" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

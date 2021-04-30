@@ -6,9 +6,125 @@
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".GameActivity"
+    android:background="#21130d"
     tools:deviceIds="wear">
 
+    <TextView
+        android:id="@+id/first_player"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="first palyer"
+        android:textAlignment="textStart"
+        android:textColor="#f6f3e3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/second_player"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="second player "
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:textColor="#f6f3e3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_player"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/board_1"
+        android:layout_width="80dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/board_2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="80dp"
+            android:backgroundTint="#f6f3e3"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="80dp"
+            android:backgroundTint="#f6f3e3"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/seven"
+            android:backgroundTint="#f6f3e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/board_2"
+        android:layout_width="90dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/board_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/two"
+            android:backgroundTint="#f6f3e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/five"
+            android:backgroundTint="#f6f3e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/eight"
+            android:backgroundTint="#f6f3e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/board_3"
+        android:layout_width="90dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/three"
+            android:backgroundTint="#f6f3e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/six"
+            android:backgroundTint="#f6f3e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/nine"
+            android:backgroundTint="#f6f3e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
