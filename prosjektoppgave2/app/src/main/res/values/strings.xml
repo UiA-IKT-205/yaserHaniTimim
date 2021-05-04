@@ -13,4 +13,12 @@
     <string name="previous">Previous</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="protocol">https://</string>
+    <string name="domain">generic-game-service.herokuapp.com</string>
+    <string name="base_path">/Game</string>
+    <string name="create_game_path">/</string>
+    <string name="join_game_path">/%1s/join</string>
+    <string name="poll_game_path">/%1s/poll</string>
+    <string name="update_game_path">/%1s/update</string>
+    <string name="game_service_key">gjF9ebA3Ix</string>
 </resources>
