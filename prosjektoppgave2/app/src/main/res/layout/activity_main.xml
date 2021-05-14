@@ -20,7 +20,7 @@
 
         android:textCursorDrawable="@color/material_on_background_emphasis_medium"
         android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintBottom_toTopOf="@+id/player_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -37,6 +37,17 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_join"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/player_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#80391e"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 

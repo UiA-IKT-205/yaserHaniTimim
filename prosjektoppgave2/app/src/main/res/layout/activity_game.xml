@@ -12,7 +12,7 @@
     <TextView
         android:id="@+id/first_player"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:text="first palyer"
         android:textAlignment="textStart"
         android:textColor="#f6f3e3"
@@ -24,11 +24,12 @@
     <TextView
         android:id="@+id/second_player"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:text="second player "
-        android:textSize="20sp"
         android:textAlignment="textStart"
         android:textColor="#f6f3e3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/game_Id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/first_player"
         tools:ignore="MissingConstraints" />
@@ -48,18 +49,24 @@
             android:id="@+id/one"
             android:layout_width="80dp"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_height="80dp" />
 
         <Button
             android:id="@+id/four"
             android:layout_width="80dp"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_height="80dp" />
 
         <Button
             android:id="@+id/seven"
             android:backgroundTint="#f6f3e3"
             android:layout_width="80dp"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_height="80dp" />
     </LinearLayout>
 
@@ -78,18 +85,24 @@
         <Button
             android:id="@+id/two"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_width="80dp"
             android:layout_height="80dp" />
 
         <Button
             android:id="@+id/five"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_width="80dp"
             android:layout_height="80dp" />
 
         <Button
             android:id="@+id/eight"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_width="80dp"
             android:layout_height="80dp" />
 
@@ -109,18 +122,24 @@
         <Button
             android:id="@+id/three"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_width="80dp"
             android:layout_height="80dp" />
 
         <Button
             android:id="@+id/six"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_width="80dp"
             android:layout_height="80dp" />
 
         <Button
             android:id="@+id/nine"
             android:backgroundTint="#f6f3e3"
+            android:textColor="#21130d"
+            android:textSize="24dp"
             android:layout_width="80dp"
             android:layout_height="80dp" />
 
@@ -138,6 +157,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/game_Id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="TextView"
+        android:textColor="#f6f3e3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/board_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
 
